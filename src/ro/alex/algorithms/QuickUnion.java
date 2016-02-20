@@ -33,6 +33,12 @@ public class QuickUnion {
 		System.out.println("Connecting "+p+" to "+q+" by setting the root of q("+j+") to be the root of p("+i+")");
 		id[i] = id[j];
 	}
+	
+	public void  printArray(){
+		for(int index=0;index<id.length;index++){
+			System.out.print(id[index]+" ");
+		}
+	}
 
 	public static void main(String[] args) {
 		
@@ -48,7 +54,7 @@ public class QuickUnion {
 		qu.union(7, 2);
 		qu.union(6, 1);
 		qu.union(7, 3);
-
+		qu.printArray();
 	}
 
 }
